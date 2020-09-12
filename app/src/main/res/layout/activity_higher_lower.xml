@@ -7,27 +7,28 @@
     tools:context=".HigherLowerActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/guess_if_the_next_throw_is_going_to_be_lower_equal_or_higher"
+        android:text="@string/title"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/diceImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/dice"
         android:src="@drawable/dice1"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEquals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLower"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:text="@string/lower"
@@ -35,16 +36,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonEquals"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/equals"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonHigher"
+        app:layout_constraintStart_toEndOf="@+id/buttonLower" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonHigher"
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:text="@string/higher"
@@ -52,15 +53,15 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textLastThrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/last_throw"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEquals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/diceImage"
         app:layout_constraintVertical_bias="0.188" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

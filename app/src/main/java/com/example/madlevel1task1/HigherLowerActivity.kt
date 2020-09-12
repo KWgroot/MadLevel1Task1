@@ -27,7 +27,6 @@ class HigherLowerActivity : AppCompatActivity() {
 
     private fun updateUI() {
         binding.textLastThrow.text = getString(R.string.last_throw, currentThrow)
-        //Something to change image
     }
 
     private fun rollDice() {

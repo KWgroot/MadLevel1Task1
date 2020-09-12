@@ -19,11 +19,14 @@ class HigherLowerActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        binding.buttonHigher.setOnClickListener {onHigherClick()}
+        binding.buttonLower.setOnClickListener {onLowerClick()}
+        binding.buttonEquals.setOnClickListener {onEqualClick()}
         updateUI()
     }
 
     private fun updateUI() {
-        binding.textLastThrow.text = getString(R.string.last_throw, lastThrow)
+        binding.textLastThrow.text = getString(R.string.last_throw, currentThrow)
         //Something to change image
     }
 
@@ -58,10 +61,10 @@ class HigherLowerActivity : AppCompatActivity() {
     }
 
     private fun onAnswerCorrect() {
-        Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_LONG).show()
+        Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show()
     }
 
     private fun onAnswerIncorrect() {
-        Toast.makeText(this, getString(R.string.incorrect), Toast.LENGTH_LONG).show()
+        Toast.makeText(this, getString(R.string.incorrect), Toast.LENGTH_SHORT).show()
     }
 }

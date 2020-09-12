@@ -29,7 +29,7 @@
 
     <Button
         android:id="@+id/buttonLower"
-        android:layout_width="141dp"
+        android:layout_width="148dp"
         android:layout_height="48dp"
         android:text="@string/lower"
         app:layout_constraintBottom_toBottomOf="parent"
